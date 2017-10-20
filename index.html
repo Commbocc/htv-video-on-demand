@@ -2,14 +2,29 @@
 layout: geowebcast
 ---
 
-<!-- search_tool -->
-{% include search_tool.html %}
-<!-- /search_tool -->
+<div class="container my-5">
 
-<!-- live_meeting_video_listing -->
-{% include live_meeting_video_listing.html %}
-<!-- /live_meeting_video_listing -->
+	<div class="row">
+		<div class="col-sm-8 col-md-9 order-sm-12">
+			<!-- live_meeting_video_listing -->
+			{% include live_meeting_video_listing.html %}
+			<!-- /live_meeting_video_listing -->
 
-<!-- on_demand_video_listing -->
-{% include on_demand_video_listing.html %}
-<!-- /on_demand_video_listing -->
+			<!-- search_tool -->
+			{% include search_tool.html %}
+			<!-- /search_tool -->
+
+			<!-- on_demand_video_listing -->
+			{% include on_demand_video_listing.html %}
+			<!-- /on_demand_video_listing -->
+		</div>
+		<div class="col-sm-4 col-md-3">
+			<div class="card sticky">
+				<div class="card-body">
+					sidebar
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

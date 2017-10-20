@@ -1,1 +1,32 @@
 <!-- GEOWEBCAST_COMPONENT -->
+<section class="mb-3">
+
+	<table class="table table-striped table-sm">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Meeting Date</th>
+				<th>Category</th>
+				<th>Duration</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			{% for n in (1..30) %}
+			<tr>
+				<td class="">
+					<a href="#" class="">
+						<i class="fa fa-play-circle"></i>
+						Play
+					</a>
+				</td>
+				<td>date</td>
+				<td>category</td>
+				<td>duration</td>
+			</tr>
+			{% endfor %}
+			
+		</tbody>
+	</table>
+
+</section>

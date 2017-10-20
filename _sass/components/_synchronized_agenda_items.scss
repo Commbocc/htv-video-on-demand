@@ -1,0 +1,25 @@
+#SynchronizedAgendaItems {
+	@include media-breakpoint-down(xs) {
+		max-height: 275px;
+	}
+	@include media-breakpoint-up(sm) {
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+	}
+}
+
+.sync-agenda-item {
+	@extend .p-1, .mb-2 ;
+	&.sync-agenda-item-past {
+		// background: #E7F8F6;
+		// @extend .text-muted ;
+		color: #C2C2C2;
+	}
+	&.sync-agenda-item-active {
+		background: #FEEC9E;
+		color: theme-color('secondary');
+	}
+}

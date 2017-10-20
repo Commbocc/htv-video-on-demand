@@ -3,14 +3,23 @@ layout: geowebcast
 permalink: /video-player
 ---
 
-<!-- video_player -->
-{% include video_player.html %}
-<!-- /video_player -->
+<div class="container-full">
+	<div class="row no-gutters border border-dark border-left-0 border-right-0">
+		<div class="col-sm-7">
+			<!-- video_player -->
+			{% include video_player.html %}
+			<!-- /video_player -->
+		</div>
+		<div class="col-sm-5" style="overflow-y: scroll;">
+			<!-- synchronized_agenda_items -->
+			{% include synchronized_agenda_items.html %}
+			<!-- /synchronized_agenda_items -->
+		</div>
+	</div>
+</div>
 
-<!-- agenda_document -->
-{% include agenda_document.html %}
-<!-- /agenda_document -->
-
-<!-- synchronized_agenda_items -->
-{% include synchronized_agenda_items.html %}
-<!-- /synchronized_agenda_items -->
+<div class="container">
+	<!-- agenda_document -->
+	{% include agenda_document.html %}
+	<!-- /agenda_document -->
+</div>

@@ -1,0 +1,17 @@
+---
+---
+
+// bootstrap
+// @import "bootstrap/functions";
+// @import "variables";
+// @import "bootstrap/mixins";
+@import "bootstrap/bootstrap";
+
+// global
+.sticky {
+	position: sticky;
+	top: $spacer;
+}
+
+// components
+@import "components/synchronized_agenda_items";
