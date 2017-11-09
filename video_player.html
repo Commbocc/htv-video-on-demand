@@ -25,13 +25,8 @@ permalink: /video-player
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" id="index-tab" data-toggle="tab" href="#index" role="tab" aria-controls="index" aria-selected="false">
-						Index
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="search-tab" data-toggle="tab" href="#search" role="tab" aria-controls="search" aria-selected="false">
-						Search
+					<a class="nav-link" id="captioning-tab" data-toggle="tab" href="#captioning" role="tab" aria-controls="captioning" aria-selected="false">
+						Captioning
 					</a>
 				</li>
 			</ul>
@@ -42,17 +37,11 @@ permalink: /video-player
 						<!-- agenda_document -->
 						{% include agenda_document.html %}
 					</div>
-					<div class="tab-pane fade p-3" id="index" role="tabpanel" aria-labelledby="index-tab">
+					<div class="tab-pane fade p-3" id="captioning" role="tabpanel" aria-labelledby="captioning-tab">
 						<!--  -->
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
-					<div class="tab-pane fade p-3" id="search" role="tabpanel" aria-labelledby="search-tab">
-						<!--  -->
-						Search
+						{% for n in (1..5) %}
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						{% endfor %}
 					</div>
 				</div>
 			</div>
@@ -60,3 +49,36 @@ permalink: /video-player
 		</div>
 	</div>
 </div>
+
+<footer class="bg-light py-2">
+	<div class="container-fluid">
+		<div class="row align-items-center">
+			<div class="col-md-7 text-center">
+				<div class="input-group my-2">
+					<input type="text" class="form-control" placeholder="Search this meeting..." aria-label="Search this meeting">
+					<span class="input-group-btn">
+						<button class="btn btn-primary text-white" type="button">Search</button>
+					</span>
+				</div>
+			</div>
+			<div class="col-md-5 text-right">
+				<ul class="list-inline small mb-0">
+					<li class="list-inline-item">
+						<a href="#">CC Info</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#">Help</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#">Report an Issue</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#" target="_blank">
+							<img src="{{ '/assets/images/pictron-powered-by-logo.png' | prepend: site.baseurl }}" alt="Powered by Pictron">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
