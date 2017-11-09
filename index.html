@@ -1,28 +1,29 @@
 ---
-layout: geowebcast
+layout: main
 ---
 
-<div class="container my-5">
+<header class="mb-3">
+	<nav id="hc-nav" is="hc-navigation" logo-href="{{ '/' | prepend: site.baseurl }}"></nav>
+	<!-- banner -->
+	{% include banner.html %}
+</header>
+
+<div class="container my-3">
 
 	<div class="row">
-		<div class="col-sm-8 col-md-9 order-sm-12">
+		<div class="col-md-8 col-lg-9 order-md-12">
 			<!-- live_meeting_video_listing -->
 			{% include live_meeting_video_listing.html %}
-			<!-- /live_meeting_video_listing -->
 
 			<!-- search_tool -->
 			{% include search_tool.html %}
-			<!-- /search_tool -->
 
 			<!-- on_demand_video_listing -->
 			{% include on_demand_video_listing.html %}
-			<!-- /on_demand_video_listing -->
 		</div>
-		<div class="col-sm-4 col-md-3">
-			<div class="card sticky">
-				<div class="card-body">
-					sidebar
-				</div>
+		<div class="col-md-4 col-lg-3">
+			<div class="sticky">
+				{% include sidebar.html %}
 			</div>
 		</div>
 	</div>

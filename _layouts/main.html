@@ -1,24 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>{{ site.title }}</title>
+	<title>
+		{{ site.title }}
+	</title>
 
-	<!-- FontAwesome CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://commbocc.github.io/html-wrapper/static/css/app.css">
 	<link rel="stylesheet" href="{{ '/assets/stylesheets/main.css' | prepend: site.baseurl }}">
 </head>
 <body>
+	<noscript>
+		<center>
+			<strong>This site is best viewed with Javascript Enabled.</strong>
+			<br>
+			<em><a href="http://www.enable-javascript.com/" target="_blank">How to enable JavaScript in your browser.</a></em>
+		</center>
+		<hr>
+	</noscript>
 
-	{{ content }}
+	<main id="hc-main">
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		{{ content }}
+
+		<footer id="hc-footer" is="hc-footer"></footer>
+
+	</main>
+
+	<script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/manifest.js"></script>
+	<script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/vendor.js"></script>
+	<script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/app.js"></script>
+	<script type="text/javascript" src="{{ '/assets/javascripts/main.js' | prepend: site.baseurl }}"></script>
 </body>
 </html>

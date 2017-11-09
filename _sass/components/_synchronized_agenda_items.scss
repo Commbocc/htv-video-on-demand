@@ -1,13 +1,18 @@
+.custom-flex-column {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
 #SynchronizedAgendaItems {
-	@include media-breakpoint-down(xs) {
+		// max-height: 100%;
+	overflow-y: auto;
+	background: #fff;
+	@include media-breakpoint-down(sm) {
 		max-height: 275px;
 	}
-	@include media-breakpoint-up(sm) {
-		position: absolute;
-		top:0;
-		left:0;
-		right:0;
-		bottom:0;
+	@include media-breakpoint-up(md) {
+		flex: 1 1 1px;
 	}
 }
 

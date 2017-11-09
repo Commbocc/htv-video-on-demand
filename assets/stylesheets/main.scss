@@ -5,7 +5,8 @@
 @import "bootstrap/functions";
 @import "variables";
 @import "bootstrap/mixins";
-@import "bootstrap/bootstrap";
+// @import "bootstrap/bootstrap";
+@import "bootstrap/utilities";
 
 // global
 .sticky {
@@ -15,3 +16,14 @@
 
 // components
 @import "components/synchronized_agenda_items";
+
+.embed-responsive-tabs {
+	padding-bottom: 130%;
+	& > .embed-responsive-item {
+		overflow-y: auto;
+	}
+}
+
+.embed-responsive-document {
+	padding-bottom: 130%;
+}
