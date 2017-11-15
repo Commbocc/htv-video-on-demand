@@ -9,10 +9,6 @@
 @import "bootstrap/utilities";
 
 // global
-.sticky {
-	position: sticky;
-	top: $spacer;
-}
 
 // components
 @import "components/synchronized_agenda_items";
