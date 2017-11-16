@@ -10,14 +10,14 @@ The [main layout](https://github.com/Commbocc/htv-video-on-demand/blob/master/_l
 
 Landing pages have several components that can be included as specified in the customization guide:
 
-### Video Portal
+### [Video Portal](https://github.com/Commbocc/htv-video-on-demand/blob/master/index.html)
 
 * banner
 * search_tool
 * live_meeting_video_listing
 * on_demand_video_listing
 
-### Video Player
+### [Video Player](https://github.com/Commbocc/htv-video-on-demand/blob/master/video_player.html)
 
 * video_player
 * synchronized_agenda_items
